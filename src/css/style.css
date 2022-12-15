@@ -3,6 +3,7 @@
 :root {
   --body-bg-color: #FAF7FD;
   --purple: #BB99DD;
+  --focus: #7b55a1;
 }
 
 *{
@@ -16,7 +17,9 @@ ul{
   list-style: none;
 }
 a{
+  /* background-color: brown; */
   text-decoration: none;
+  color: var(--purple);
 }
 
 main{
@@ -25,4 +28,59 @@ main{
   align-items: center;
   justify-content: center;
   background-color: var(--body-bg-color);
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 16px 8px;
+  width: 90%;
+  max-width: 400px;
+  gap: 32px;
+  /* background-color: blue; */
+}
+.profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: aqua; */
+}
+.profile .insta_username{
+  color: var(--purple);
+}
+.links_container{
+  /* background-color: aquamarine; */
+}
+.links{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+}
+.links li {
+  border: 1px solid var(--purple);
+  width: 200px;
+  padding: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+.links li:hover{
+  background-color: var(--focus);
+}
+.perfil{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  outline: 4px solid var(--purple);
+  margin-bottom: 8px;
+}
+
+.medias{
+  display: flex;
+  gap: 16px;
+  /* background-color: red; */
+}
+
+.social_media_container{
 }
